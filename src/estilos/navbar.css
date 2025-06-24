@@ -1,0 +1,85 @@
+.nav {
+    background:darkslategrey;
+    color: white;
+    text-align: center;
+    height: 110px;
+    display: flex;
+    justify-content: center; /* Centra el contenido del nav */
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+  }
+  
+  .nav-header {
+    display: flex;
+    float: right;
+    margin-top: 50px;
+  }
+  
+  .hamburger {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none; /* Oculto por defecto */
+  }
+  
+  .nav-menu {
+    width: 85%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .nav-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .nav-menu li{
+    transition: transform 0.2s ease-in-out;
+  }
+    li:hover{
+    transform: scale(1.2);
+  }
+  
+  /* Responsive: Mostrar hamburguesa y ocultar menú */
+  @media (max-width: 768px) {
+
+    .nav{
+      display: flex;
+      justify-content: space-around;
+    }
+    .hamburger {
+      display: block;
+    }
+  
+    .nav-menu {
+      display: none; /* Ocultar menú por defecto */
+      flex-direction: column;
+      gap: 0.5rem;
+      background: darkslategray;
+      padding: 1rem;
+      position: absolute;
+      top: 110px;
+      right: 0;
+      width: 200px;
+      border-radius: 5px;
+      align-items: center;
+    }
+   
+  
+    .nav-menu.open {
+      display: flex; /* Mostrar menú cuando está abierto */
+      transition: all 0.5 ease-in-out;
+    }
+  }
+
+  .nav-menu.open:hover{
+    transform: scale(1.0);
+  }

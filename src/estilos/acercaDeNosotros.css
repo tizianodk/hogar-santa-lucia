@@ -1,0 +1,43 @@
+.imagen{
+    background-image: url(../imagenes/imagen2.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: 0%;
+    width: 50%;
+    height: 500px;
+}
+
+.acerca{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .acerca {
+      flex-direction: column; /* Cambia a diseño en columna */
+      gap: 1rem;
+    }
+  
+    .imagen {
+      width: 100%; /* Ocupa todo el ancho disponible */
+      height: 300px; /* Ajusta la altura en pantallas pequeñas */
+    }
+  
+    .texto {
+      width: 100%; /* Ocupa todo el ancho disponible */
+      padding: 1rem;
+      margin-top: -70px;
+    }
+  
+    .texto h2 {
+      font-size: 1.5rem; /* Reduce el tamaño del título */
+    }
+  
+    .texto p {
+      font-size: 0.875rem; /* Reduce el tamaño del texto */
+      
+    }
+  }

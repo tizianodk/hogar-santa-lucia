@@ -1,0 +1,85 @@
+.info_footer{
+    background-color: darkslategrey;    
+}
+
+.copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 220px;
+}
+
+/* Estilo general para los botones sociales */
+.social-button {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Elimina el subrayado */
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin bordes */
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .social-button:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
+  }
+  
+  .ig {
+    color: #c13584;
+  }
+  
+  .fb {
+    color: #3b5998;
+  }
+  
+  .wpp {
+    color: #25d366;
+  }
+  
+  .nombreIg,
+  .nombreFb,
+  .nombreWpp {
+    margin: 5px;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: inherit; /* Usa el color del botón */
+  }
+
+
+  @media (max-width: 768px) {
+    .footer {
+      padding: 1rem;
+    }
+  
+    .info_footer {
+      flex-direction: row; /* Asegura que los elementos estén en columna */
+      gap: 1rem;
+    }
+  
+    .social-icons {
+      gap: 0.5rem; /* Reduce el espacio entre los íconos */
+    }
+  
+    .copy {
+      font-size: 0.75rem; /* Reduce el tamaño del texto */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .social-icons {
+      flex-direction: row; /* Cambia a columna en pantallas muy pequeñas */
+      gap: 0.5rem;
+    }
+  
+    .copy {
+      font-size: 0.7rem; /* Reduce aún más el tamaño del texto */
+    }
+  }

@@ -1,0 +1,97 @@
+/* Estilo para el formulario */
+.formulario label {
+  display: block;
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  color: #4a5568; /* text-gray-700 */
+  margin-bottom: 0.5rem; /* mb-2 */
+  
+}
+
+
+.form-titulo {
+  font-family: cursive;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  width: 160%
+}
+
+.formulario input,
+.formulario textarea {
+  width: 160%; /* Cambiado a 100% para adaptarse al contenedor */
+  padding: 0.75rem 1rem; /* px-4 py-3 */
+  border: 1px solid #d2d6dc; /* border-gray-300 */
+  border-radius: 0.5rem; /* rounded-lg */
+  outline: none;
+  transition: all 0.2s; /* transition-colors */
+  margin-bottom: 25px;
+  
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  border-color: transparent; /* focus:border-transparent */
+  box-shadow: 0 0 0 2px #4299e1; /* focus:ring-2 focus:ring-blue-500 */
+}
+
+.formulario textarea {
+  resize: none; /* resize-none */
+}
+
+.formulario button {
+  width: 160%; /* Cambiado a 100% para adaptarse al contenedor */
+  background: linear-gradient(to right, #3182ce, #805ad5); /* bg-gradient-to-r from-blue-600 to-purple-600 */
+  color: white; /* text-white */
+  padding: 0.75rem 1.5rem; /* py-3 px-6 */
+  border-radius: 0.5rem; /* rounded-lg */
+  font-weight: 600; /* font-semibold */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+  transition: all 0.2s; /* transition-all duration-200 */
+  margin-bottom: 35px;
+}
+
+.formulario button:hover {
+  background: linear-gradient(to right, #2b6cb0, #6b46c1); /* hover:from-blue-700 hover:to-purple-700 */
+  transform: scale(1.05); /* hover:scale-105 */
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .formulario input,
+  .formulario textarea,
+  .formulario button {
+      width: 100%; /* Ocupa todo el ancho disponible */
+      padding: 0.5rem; /* Reduce el padding */
+}
+
+  .formulario label {
+      font-size: 0.75rem; /* Reduce el tamaño de fuente */
+  }
+
+  .formulario button {
+      font-size: 0.875rem; /* Reduce el tamaño del texto del botón */
+
+    }
+  .formulario .form-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 100%;
+    
+  }
+}
+
+@media (max-width: 480px) {
+  .formulario input,
+  .formulario textarea,
+  .formulario button {
+      padding: 0.4rem; /* Ajusta el padding para pantallas muy pequeñas */
+    }
+
+  .formulario label {
+      font-size: 0.7rem; /* Reduce aún más el tamaño de fuente */
+  }
+}
