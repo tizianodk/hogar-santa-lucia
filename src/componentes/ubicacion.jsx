@@ -4,9 +4,13 @@ import '../estilos/ubicacion.css';
 
 function Ubicacion_Contacto() {
   return (
-    <div className="ubicacion-contacto">
+    <div id='contacto' className="ubicacion-contacto">
+      <div className='franjaUbiContacto' data-aos='fade-down'>
+          <h1 className='tituloUbiContacto'>Ubicación y Contacto</h1>
+          <p className="subtituloUbiContacto">Conocé el lugar y Contáctanos!</p>
+      </div>
       {/* Sección de Ubicación */}
-      <div className="ubicacion">
+      <div className="ubicacion" data-aos="fade-up" data-aos-delay="200">
         <h2 className="ubicacion-titulo">📍 ¿Dónde Estamos?</h2>
         <div className="ubicacion-mapa">
           <iframe
@@ -21,7 +25,7 @@ function Ubicacion_Contacto() {
       </div>
 
       {/* Sección de Contacto */}
-      <div className="contacto">
+      <div className="contacto" data-aos="fade-up" data-aos-delay="300">
         <Contacto />
       </div>
     </div>
