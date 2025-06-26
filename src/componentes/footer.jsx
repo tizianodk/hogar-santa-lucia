@@ -49,7 +49,7 @@ function Footer() {
 
           {/* Redes sociales */}
           <div className="footer-section social-section">
-            <h3 className="footer-title"><u style={{fontFamily:'cursive'}}>Síguenos</u></h3>
+            <h3 className="footer-title"><u>Síguenos</u></h3>
             <div className="social-icons">
               {socialLinks.map((social) => {
                 const IconComponent = social.icon;
@@ -79,7 +79,7 @@ function Footer() {
 
           {/* Información adicional */}
           <div className="footer-section info-section">
-            <h3 className="footer-title"><u style={{fontFamily:'cursive'}}>Geriátrico Santa Lucía</u></h3>
+            <h3 className="footer-title"><u>Geriátrico Santa Lucía</u></h3>
             <p className="footer-description">
               Brindamos cuidado especializado y atención integral para adultos mayores 
               con el compromiso de ofrecer calidad de vida en un ambiente cálido y profesional.
