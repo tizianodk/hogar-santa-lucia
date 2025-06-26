@@ -66,21 +66,21 @@ function AcercaDeNosotros() {
                                   <img src={cuidadoHum} alt="" style={{width:"40px", height:'40px'}} />
                                     <i className="fas fa-heart"></i>
                                 </div>
-                                <h4>Cuidado Humano</h4>
+                                <h5>Cuidado Humano</h5>
                             </div>
                             <div className="valor-item">
                                 <div className="valor-icon">
                                     <img src={personalProf} alt="" style={{width:"40px", height:'40px'}} />
                                     <i className="fas fa-users"></i>
                                 </div>
-                                <h4>Equipo Profesional</h4>
+                                <h5>Equipo Profesional</h5>
                             </div>
                             <div className="valor-item">
                                 <div className="valor-icon">
                                     <img src={familia} alt="" style={{width:"40px", height:'40px'}} />
                                     <i className="fas fa-home"></i>
                                 </div>
-                                <h4>Ambiente Familiar</h4>
+                                <h5>Ambiente Familiar</h5>
                             </div>
                         </div>
                     </div>

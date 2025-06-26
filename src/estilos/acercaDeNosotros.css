@@ -155,8 +155,13 @@
     font-size: 1.5rem;
   }
 
+
   .valor-item {
     max-width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .valor-icon img {
