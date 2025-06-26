@@ -6,7 +6,7 @@ function Hero() {
   
   const slides = [
     {
-      title: "Bienvenidos al Geriátrico Santa Lucía",
+      title: "Bienvenidos a Hogar Santa Lucía",
       subtitle: "Donde tus seres queridos reciben atención, respeto y cariño",
       description: "Más de 35 años brindando cuidado integral y profesional"
     },

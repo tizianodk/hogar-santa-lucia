@@ -41,13 +41,13 @@ function AcercaDeNosotros() {
                     <div className="acerca-contenido" data-aos='fade-left' data-aos-delay='400'>
                         <div className="contenido-header">
                             <div className="decorative-line"></div>
-                            <h2 className="contenido-title">Geriátrico Santa Lucía</h2>
+                            <h2 className="contenido-title">Hogar Santa Lucía</h2>
                             <div className="decorative-line"></div>
                         </div>
 
                         <div className="texto-principal">
                             <p className="parrafo-destacado">
-                                Desde hace más de 35 años, en <strong>Geriátrico Santa Lucía</strong> brindamos un espacio de cuidado,
+                                Desde hace más de 35 años, brindamos un espacio de cuidado,
                                 contención y respeto para nuestros adultos mayores. Nuestra misión es ofrecer una atención integral,
                                 profesional y humana, garantizando la calidad de vida y el bienestar de cada residente.
                             </p>

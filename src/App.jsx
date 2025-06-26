@@ -2,6 +2,7 @@
 import AcercaDeNosotros from './componentes/acercaDeNosotros.jsx'
 import Footer from './componentes/footer.jsx'
 import Hero from './componentes/hero.jsx'
+import Instalaciones from './componentes/instalaciones.jsx'
 import NavBar from './componentes/navbar.jsx'
 import Servicios from './componentes/servicios.jsx'
 import Ubicacion_Contacto from './componentes/ubicacion.jsx'
@@ -13,6 +14,7 @@ function App() {
       <NavBar />
       <main className="main">
         <Hero />
+        <Instalaciones/>
         <AcercaDeNosotros/>
         <Servicios/>
         <div className='ubi_contacto' >

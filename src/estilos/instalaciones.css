@@ -1,0 +1,60 @@
+/* Franja del título */
+.franja-instalaciones {
+    width: 100%;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #2f4f4f 0%, #4682b4 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+
+.instalaciones{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.imagenes-instalaciones img{
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+}
+.imagenes-instalaciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(47, 79, 79, 0.1);
+}
+
+.imagenes-instalaciones::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(47, 79, 79, 0.05), transparent);
+    transition: all 0.6s ease;
+}
+
+.imagenes-instalaciones:hover::before {
+    left: 100%;
+}
+
+.imagenes-instalaciones:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border-color: #4682b4;
+}
