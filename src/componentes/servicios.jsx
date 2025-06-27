@@ -3,7 +3,7 @@ import '../estilos/servicios.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-// Importar iconos
+//iconos
 import logoEnf from '../imagenes/enfermeria.png';
 import logo24h from '../imagenes/24-horas.png';
 import logoSeg from '../imagenes/camara.png';
@@ -11,6 +11,7 @@ import logoDibujo from '../imagenes/dibujo.png';
 import logoTejido from '../imagenes/tejido.png';
 import logoGim from '../imagenes/gimnasia.png';
 import logoPsicologia from '../imagenes/psicologia.png';
+import logoServicioMedico from '../imagenes/servicioMedico.png';
 
 function Servicios() {
   useEffect(() => {
@@ -27,6 +28,12 @@ function Servicios() {
       title: "Atención 24hs",
       description: "Cuidado continuo las 24 horas del día, los 365 días del año",
       alt: "servicio 24hs"
+    },
+    {
+      icon: logoServicioMedico,
+      title: "Servicio Medico",
+      description: "Atención médica permanente para el cuidado integral de la salud.",
+      alt: "servicio medico"
     },
     {
       icon: logoEnf,

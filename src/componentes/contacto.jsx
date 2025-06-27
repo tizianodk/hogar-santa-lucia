@@ -2,12 +2,12 @@ import { useForm, ValidationError } from '@formspree/react';
 import '../estilos/contacto.css';
 
 function Contacto() {
-  const [state, handleSubmit] = useForm("mwpblgre");
+  const [state, handleSubmit] = useForm("mgvyryvb");
 
   if (state.succeeded) {
     return (
       <div className="formulario">
-        <p className="mensaje-exito">¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.</p>
+        <p className="mensaje-exito">¡Gracias por tu mensaje!</p>
       </div>
     );
   }

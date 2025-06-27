@@ -148,6 +148,10 @@
     display: block;
   }
 
+  .hamburger{
+    font-size: 18px;
+  }
+
   .nav-menu {
     position: fixed;
     top: 70px;

@@ -11,6 +11,7 @@
     text-align: center;
     position: relative;
     overflow: hidden;
+    border-bottom:20px solid white;
   }
   
   .hero::before {

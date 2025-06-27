@@ -1,5 +1,12 @@
-/* Franja del título */
-.franja-instalaciones {
+/* Sección de instalaciones */
+.instalaciones-section {
+    padding: 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+  }
+  
+  /* Franja del título */
+  .franja-instalaciones {
     width: 100%;
     padding: 4rem 2rem;
     background: linear-gradient(135deg, #2f4f4f 0%, #4682b4 100%);
@@ -9,36 +16,62 @@
     align-items: center;
     color: white;
     text-align: center;
+    position: relative;
+    overflow: hidden;
   }
-
-.instalaciones{
+  
+  .franja-instalaciones::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .acerca-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .acerca-subtitle {
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    opacity: 0.9;
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
+    font-weight: 300;
+  }
+  
+  /* Contenedor principal de instalaciones */
+  .instalaciones {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
-    margin-bottom: 4rem;
-}
-
-.imagenes-instalaciones img{
-    width: 100%;
-    height: 500px;
+    padding: 4rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  /* Contenedor de cada imagen */
+  .imagenes-instalaciones {
     border-radius: 20px;
-}
-.imagenes-instalaciones{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    border-radius: 20px;
-    padding: 2rem;
+    padding: 1.5rem;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
     border: 1px solid rgba(47, 79, 79, 0.1);
-}
-
-.imagenes-instalaciones::before {
+  }
+  
+  .imagenes-instalaciones::before {
     content: '';
     position: absolute;
     top: 0;
@@ -47,14 +80,178 @@
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(47, 79, 79, 0.05), transparent);
     transition: all 0.6s ease;
-}
-
-.imagenes-instalaciones:hover::before {
+    z-index: 1;
+  }
+  
+  .imagenes-instalaciones:hover::before {
     left: 100%;
-}
-
-.imagenes-instalaciones:hover {
+  }
+  
+  .imagenes-instalaciones:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     border-color: #4682b4;
-}
+  }
+  
+  /* Estilos de las imágenes */
+  .imagenes-instalaciones img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .imagenes-instalaciones:hover img {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Efecto de brillo en las imágenes */
+  .imagenes-instalaciones img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: all 0.6s ease;
+  }
+  
+  .imagenes-instalaciones:hover img::after {
+    left: 100%;
+  }
+  
+  /* Overlay con información (opcional) */
+  .imagen-overlay {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    background: linear-gradient(135deg, rgba(47, 79, 79, 0.9), rgba(70, 130, 180, 0.9));
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    z-index: 3;
+  }
+  
+  .imagenes-instalaciones:hover .imagen-overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .imagen-overlay h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .imagen-overlay p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+  
+  /* CTA Section para instalaciones */
+  .instalaciones-cta {
+    background: linear-gradient(135deg, #2f4f4f, #4682b4);
+    color: white;
+    padding: 3rem 2rem;
+    margin: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(47, 79, 79, 0.3);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .instalaciones-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="80" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="60" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+  }
+  
+  .instalaciones-cta h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .instalaciones-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .franja-instalaciones {
+      padding: 3rem 1rem;
+    }
+    
+    .instalaciones {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      padding: 2rem 1rem;
+    }
+    
+    .imagenes-instalaciones {
+      padding: 1rem;
+    }
+    
+    .imagenes-instalaciones img {
+      height: 250px;
+    }
+    
+    .instalaciones-cta {
+      margin: 1rem;
+      padding: 2rem 1rem;
+    }
+    
+    .instalaciones-cta h3 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .instalaciones {
+      padding: 1.5rem 0.5rem;
+    }
+    
+    .imagenes-instalaciones {
+      padding: 0.8rem;
+    }
+    
+    .imagenes-instalaciones img {
+      height: 200px;
+      border-radius: 10px;
+    }
+    
+    .imagen-overlay {
+      padding: 0.8rem;
+    }
+    
+    .imagen-overlay h4 {
+      font-size: 1rem;
+    }
+    
+    .imagen-overlay p {
+      font-size: 0.8rem;
+    }
+  }
+

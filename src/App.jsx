@@ -14,8 +14,8 @@ function App() {
       <NavBar />
       <main className="main">
         <Hero />
-        <Instalaciones/>
         <AcercaDeNosotros/>
+        <Instalaciones/>
         <Servicios/>
         <div className='ubi_contacto' >
           <Ubicacion_Contacto/>

@@ -1,7 +1,7 @@
 import '../estilos/acercaDeNosotros.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
-import imagen2 from '../imagenes/imagen2.jpg'
+import imagenAcerca from '../imagenes/imagenAcerca.png'
 import cuidadoHum from '../imagenes/cuidado.png'
 import personalProf from '../imagenes/personal.png'
 import familia from '../imagenes/familia.png'
@@ -28,8 +28,8 @@ function AcercaDeNosotros() {
                     
                     {/* Imagen */}
                     <div className="acerca-imagen" data-aos='fade-right' data-aos-delay='200'>
-                        <div className="imagen-overlay">
-                            <img src={imagen2} alt="imagen"/>
+                        <div className="imagen">
+                            <img src={imagenAcerca} alt="imagen"/>
                             <div className="experiencia-badge">
                                 <h2><span className="experiencia-numero">+35</span>
                                 <span className="experiencia-texto"> Años de Experiencia</span></h2>

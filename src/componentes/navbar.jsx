@@ -35,6 +35,7 @@ function NavBar() {
   const menuItems = [
     { id: 'hero', label: 'Inicio', href: 'inicio' },
     { id: 'acerca', label: 'Sobre Nosotros', href: 'AcercaDeNosotros' },
+    { id: 'instalaciones', label: 'Instalaciones', href:  'Instalaciones'},
     { id: 'servicios', label: 'Servicios', href: 'servicios' },
     { id: 'contacto', label: 'Contacto', href: 'contacto' }
   ];

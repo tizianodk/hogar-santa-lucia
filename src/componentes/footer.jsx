@@ -8,7 +8,7 @@ function Footer() {
   const socialLinks = [
     {
       id: 'instagram',
-      href: 'https://instagram.com/hogarsantalucia.original',
+      href: 'https://www.instagram.com/hogarsantalucia.orginal?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
       icon: FaInstagram,
       label: 'Instagram',
       className: 'ig',
@@ -17,7 +17,7 @@ function Footer() {
     },
     {
       id: 'facebook',
-      href: 'https://facebook.com/tuCuenta',
+      href: 'https://www.facebook.com/share/19duN4Si5i/?mibextid=wwXIfr',
       icon: FaFacebook,
       label: 'Facebook',
       className: 'fb',
