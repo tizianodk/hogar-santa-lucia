@@ -33,7 +33,6 @@ function Footer() {
   };*/
 
   const handleSocialClick = (platform) => {
-    // Analytics tracking could be added here
     console.log(`Clicked on ${platform}`);
   };
 
