@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://hogar-santa-lucia.vercel.app/sitemap.xml
