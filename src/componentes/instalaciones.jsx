@@ -62,7 +62,7 @@ function Instalaciones(){
             {/* CTA Section opcional */}
             <div className="instalaciones-cta" data-aos='fade-up'>
                 <h3>¿Te gustaría conocer nuestras instalaciones?</h3>
-                <p>Agenda una visita y descubre por qué somos la mejor opción para tu cuidado médico</p>
+                <p>Visitá nuestro geriátrico en San Miguel de Tucumán y conocé un espacio cálido, seguro y adaptado a cada necesidad.</p>
             </div>
         </div>
     )

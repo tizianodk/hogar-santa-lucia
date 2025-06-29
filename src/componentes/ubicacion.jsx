@@ -7,7 +7,8 @@ function Ubicacion_Contacto() {
     <div id='contacto' className="ubicacion-contacto">
       <div className='franjaUbiContacto' data-aos='fade-down'>
           <h1 className='tituloUbiContacto'>Ubicación y Contacto</h1>
-          <p className="subtituloUbiContacto">Conocé el lugar y Contáctanos!</p>
+          <p className="subtituloUbiContacto">Nos encontramos en San Miguel de Tucumán, Tucumán. 
+          Consultá hoy mismo sobre disponibilidad en nuestro hogar para adultos mayores.</p>
       </div>
       {/* Sección de Ubicación */}
       <div className="ubicacion" data-aos="fade-up" data-aos-delay="200">
