@@ -6,7 +6,7 @@ function Hero() {
   
   const slides = [
     {
-      title: "Bienvenidos a Hogar Santa Lucía – Geriátrico en San Miguel de Tucumán",
+      title: "Bienvenidos a Hogar Santa Lucía",
       subtitle: "Donde tus seres queridos reciben atención, respeto y cariño",
       description: "Más de 35 años brindando atención integral y personalizada a adultos mayores"
     },
