@@ -102,7 +102,7 @@ function Footer() {
 
       {/* Botón flotante de WhatsApp */}
       <a
-        href="https://wa.me/5493813860904?text=Hola%2C%20me%20gustaria%2F%20%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20Hogar%20Santa%20Luc%C3%ADa.%20%C2%BFPodr%C3%ADan%20brindarme%20detalles%20sobre%20los%20servicios%20y%20disponibilidad%3F"
+        href="https://wa.me/5493813860904?text=Hola%2C%20me%20gustaria%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20Hogar%20Santa%20Luc%C3%ADa.%20%C2%BFPodr%C3%ADan%20brindarme%20detalles%20sobre%20los%20servicios%20y%20disponibilidad%3F"
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-float"
