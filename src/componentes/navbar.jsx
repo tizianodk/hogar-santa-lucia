@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../estilos/navbar.css';
-import logo from '../imagenes/nombre_geriatrico.PNG';
+import logo from '../imagenes/logo_geriatrico_nuevo.png';
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +35,7 @@ function NavBar() {
   const menuItems = [
     { id: 'hero', label: 'Inicio', href: 'inicio' },
     { id: 'acerca', label: 'Sobre Nosotros', href: 'AcercaDeNosotros' },
-    { id: 'instalaciones', label: 'Instalaciones', href:  'Instalaciones'},
+    { id: 'instalaciones', label: 'Instalaciones', href: 'Instalaciones' },
     { id: 'servicios', label: 'Servicios', href: 'servicios' },
     { id: 'contacto', label: 'Contacto', href: 'contacto' }
   ];
@@ -44,16 +44,16 @@ function NavBar() {
     <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <div className="nav-logo">
-          <img 
-            src={logo} 
-            alt="Geriátrico Santa Lucía" 
+          <img
+            src={logo}
+            alt="Geriátrico Santa Lucía"
             onClick={() => scrollToSection('hero')}
           />
         </div>
-        
+
         <div className="nav-header">
-          <button 
-            className={`hamburger ${isOpen ? 'active' : ''}`} 
+          <button
+            className={`hamburger ${isOpen ? 'active' : ''}`}
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >☰
@@ -62,11 +62,11 @@ function NavBar() {
             <span></span>
           </button>
         </div>
-        
+
         <ul className={`nav-menu ${isOpen ? 'open' : ''}`}>
           {menuItems.map((item) => (
             <li key={item.id} className="nav-item">
-              <a 
+              <a
                 href={item.href}
                 onClick={(e) => {
                   e.preventDefault();
@@ -79,7 +79,7 @@ function NavBar() {
             </li>
           ))}
         </ul>
-        
+
         {/* Overlay para cerrar el menú mobile */}
         {isOpen && <div className="nav-overlay" onClick={closeMenu}></div>}
       </div>

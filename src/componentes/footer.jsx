@@ -4,7 +4,7 @@ import { FaInstagram, FaFacebook, FaWhatsapp, FaMapMarkerAlt, FaPhone, FaEnvelop
 
 function Footer() {
   const currentYear = new Date().getFullYear();
-  
+
   const socialLinks = [
     {
       id: 'instagram',
@@ -39,10 +39,10 @@ function Footer() {
   return (
     <footer className="footer" role="contentinfo">
       <div className="footer-container">
-        
+
         {/* Sección principal del footer */}
         <div className="footer-main">
-          
+
           {/* Información de contacto */}
 
 
@@ -63,8 +63,8 @@ function Footer() {
                     onClick={() => handleSocialClick(social.label)}
                   >
                     <div className="social-icon-wrapper">
-                      <IconComponent 
-                        size={28} 
+                      <IconComponent
+                        size={28}
                         color={social.color}
                         aria-hidden="true"
                       />
@@ -78,13 +78,13 @@ function Footer() {
 
           {/* Información adicional */}
           <div className="footer-section info-section">
-            <h3 className="footer-title"><u>Geriátrico Santa Lucía</u></h3>
+            <h3 className="footer-title"><u>Hogar Santa Lucía</u></h3>
             <p className="footer-description">
-              Brindamos cuidado especializado y atención integral para adultos mayores 
+              Brindamos cuidado especializado y atención integral para adultos mayores
               con el compromiso de ofrecer calidad de vida en un ambiente cálido y profesional.
             </p>
             <div className="certifications">
-              <span className="certification-badge">Habilitado por el Ministerio de Salud</span>
+              <span className="certification-badge">Habilitado por el SIPROSA. Cumpliendo con todas las normativas vigentes</span>
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@ function Footer() {
         {/* Copyright y enlaces legales */}
         <div className="footer-bottom">
           <div className="copyright">
-            <p>&copy; {currentYear} Geriátrico Santa Lucía. Todos los derechos reservados.</p>
+            <p>&copy; {currentYear} Hogar Santa Lucía. Todos los derechos reservados.</p>
           </div>
         </div>
       </div>
